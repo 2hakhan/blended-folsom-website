@@ -510,6 +510,7 @@ a {
     }
 
     .nav-links {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
@@ -520,6 +521,7 @@ a {
 
     .nav-links.active {
         display: flex;
+        flex-direction: column;
     }
 
     .burger {
