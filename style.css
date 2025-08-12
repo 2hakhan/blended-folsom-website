@@ -9,74 +9,6 @@ body {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 20px;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .logo img {
-        max-width: 50px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        align-items: flex-start;
-        padding-left: 0;
-    }
-
-    .nav-right {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .phone-logo-link,
-    .logo-link {
-        font-size: 1rem;
-    }
-
-    .nav-links li:last-child {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .services {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 40px;
-    }
-
-    .service-img {
-        max-width: 100%;
-        aspect-ratio: 1 / 1;
-        height: auto;
-    }
-
-    .service-text {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .service-text p {
-        text-align: center;
-    }
-
-    .services-title {
-        margin-left: 20px;
-        font-size: 2.2rem;
-    }
-}
-
-
 
 .navbar {
     display: flex;
@@ -549,4 +481,85 @@ a {
 
 .before-and-after-text h1 {
     font-size: 3rem;
+}
+
+/* MOBILE STYLING */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.burger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .nav-right {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        width: auto;
+    }
+
+    .logo-link,
+    .phone-logo-link {
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 20px 60px;
+        flex-direction: column;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
 }

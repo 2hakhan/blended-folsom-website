@@ -60,6 +60,12 @@
                 <span class="logo-text">blended_folsom</span>
             </a>
         </div>
+
+        <div class="burger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </nav>
 
     <header class="hero">
@@ -216,5 +222,13 @@
         </div>
         <script src="scroll-animation.js"></script>
 </body>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
+
 
 </html>
