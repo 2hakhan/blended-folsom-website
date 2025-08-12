@@ -495,10 +495,9 @@ a {
     .burger {
         display: flex;
         flex-direction: column;
-        cursor: pointer;
         gap: 5px;
-        margin-left: 20px;
-        z-index: 1001;
+        cursor: pointer;
+        margin-left: 10px;
     }
 
     .burger .bar {
@@ -522,11 +521,11 @@ a {
     }
 
     .nav-right {
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         margin-left: auto;
-        margin-right: 0;
+        gap: 16px;
     }
 
     .logo-link,
