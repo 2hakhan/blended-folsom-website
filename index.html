@@ -4,15 +4,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blended Folsom</title>
+    <title>Blended Aesthetics</title>
     <link rel="icon" href="images/blended logo.png" type="image/png">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
 
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1287156359642015');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1287156359642015&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 
@@ -28,9 +51,9 @@
             <li class="dropdown">
                 <a href="index.html#meet-the-team">About </a>
                 <ul class="dropdown-menu">
-                    <li><a href="about.html#our-approach">Our Approach</a></li>
-                    <li><a href="index.html#meet-the-team">Meet the team</a></li>
-                    <li><a href="about.html#payment-plans">Payment plans</a></li>
+                    <li><a href="our-approach.html">Our Approach</a></li>
+                    <li><a href="meet-the-team.html">Meet the team</a></li>
+                    <li><a href="payment-plans.html">Payment plans</a></li>
                 </ul>
             </li>
 
@@ -44,10 +67,10 @@
                 </ul>
             </li>
             <li> <a href="before-and-after.html">Before & After</a></li>
-            <li> <a href="https://goldenhillsplasticsurgery.com/team/dr-seth-eberlin/">Medical Director</a></li>
             <li> <a href="contact.html">Contact</a></li>
+            <li> <a href="FAQ.html">Q&A</a></li>
             <li class="book-now-navbar">
-                <a href="https://jknqu.myaestheticrecord.com/online-booking">Book Now</a>
+                <a id="bookNowBtn" href="https://jknqu.myaestheticrecord.com/online-booking">Book Now</a>
             </li>
         </ul>
         <div class="nav-right">
@@ -71,7 +94,8 @@
     <header class="hero">
         <div class="overlay"></div>
         <div class="hero-content animate-fade-slide">
-            <h1>BLENDED FOLSOM</h1>
+            <h1>Blended Aesthetics</h1>
+            <p class="hero-subtitle">Folsom, CA</p>
             <a href="https://jknqu.myaestheticrecord.com/online-booking">
                 <button>Book Now</button>
             </a>
@@ -79,96 +103,93 @@
     </header>
 
     <div id="meet-the-team" class="about-me">
-        <h2 class="about-me-title animate-fade-slide">About Me</h2>
-        <div class="about-me-content animate-fade-slide">
-            <h3>
-                Pargraph here detailing what she's about
-            </h3>
+        <h2 class="about-me-title">About Me</h2>
+        <div class="about-me-container animate-fade-slide-left">
+            <div class="about-me-content">
+                <div class="about-me-img-container">
+                    <img src="images/julie2.jpg" class="about-me-img">
+                    <p class="about-me-subtitle"> Julie Ivanov</p>
+                </div>
+                <div class="about-me-text">
+                    <h1> Top Medical Spa Treatments in Folsom, CA with Julie Ivanov
+                    </h1>
+                    <p>
+                        Julie Ivanov, RN and licensed esthetician, combines years of neurosurgical experience with
+                        advanced aesthetic training to deliver safe, natural results. Specializing in injectables and
+                        laser treatments, she provides personalized care to help clients look and feel their
+                        best. Based in Folsom, CA.
+                    </p>
+                    <button class="learn-more-button" onclick="window.location.href='meet-the-team.html'">Learn
+                        More</button>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div>
+
     </div>
 
     <div id="services" class="services-section">
         <h2 class="services-title">Services</h2>
         <section id="services" class="services">
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="0">
                 <img src="images/service-image1.jpg" class="service-img animate-fade-slide">
                 <div class="service-text animate-fade-slide">
                     <div class="service-header">
                         <h3>BOTOX/DYSPORT</h3>
-                        <p> $40 | 35 min</p>
+                        <p> $40 | 45 min</p>
                     </div>
-                    <p><b>CONSULTATION + TREATMENT: </b> done at the same appt. We will discuss both of the options
-                        Botox &
-                        Dysport. Price depends on the number of units used, average dose 30-60 units. </p>
-
-                    <p>First time patient pricing as follows: Dysport ($11 per units) and Botox ($15 per unit).</p>
-
-                    <p><b>FREQUENCY OF TREATMENT: </b>Every 3–4 months is recommended for best results.</p>
-                    <button onclick="window.location.href='botox-dysport.html'">Learn More</button>
+                    <p>Smooth away wrinkles and fine lines with these quick, comfortable injections that temporarily
+                        relax facial muscles. </p>
+                    <button class="learn-more-button" onclick="window.location.href='botox-dysport.html'">Learn
+                        More</button>
                 </div>
             </div>
 
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
                 <img src="images/service-image2.jpg" class="service-img animate-fade-slide">
                 <div class="service-text animate-fade-slide">
                     <div class="service-header">
                         <h3>SCULPTRA</h3>
                         <p> $40 | 35 min</p>
                     </div>
-                    <p><b>CONSULTATION + TREATMENT: </b>Performed during the same appointment. We will evaluate your
-                        facial
-                        structure and aesthetic goals to determine the optimal injection plan. Sculptra is priced
-                        per
-                        vial, and the number of vials depends on individual needs—most patients require 1–2 vials
-                        per
-                        session.</p>
                     <p>
-                        First time patient pricing: $850 per vial. Package pricing available for multi-session treatment
-                        plans.
+                        Stimulate your body's natural collagen production to gradually restore facial volume and smooth
+                        deep wrinkles.
                     </p>
-                    <p>
-                        <b>FREQUENCY OF TREATMENT: </b>Typically, 2–3 sessions are recommended, spaced 4–6 weeks apart.
-                        Results
-                        gradually build and can last up to 2 years.
-                    </p>
-                    <button onclick="window.location.href='sculptra.html'">Learn More</button>
+                    <button class="learn-more-button" onclick="window.location.href='sculptra.html'">Learn More</button>
                 </div>
             </div>
 
-            <div class="service-item">
-                <img src="images/service-image2.jpg" class="service-img animate-fade-slide">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/service-image3.jpg" class="service-img animate-fade-slide">
                 <div class="service-text animate-fade-slide">
                     <div class="service-header">
-                        <h3>LIP FILLER</h3>
-                        <p> $40 | 35 min</p>
+                        <h3>DERMAL FILLER</h3>
+                        <p> $40 | 45-60 min</p>
                     </div>
-                    <p>Paragrah here about what this service is about</p>
-                    <button onclick="window.location.href='dermal-filler.html'">Learn More</button>
+                    <p>
+                        Instantly restore volume, enhance lips, and smooth lines with these versatile injectable
+                        treatments.
+                    </p>
+                    <button class="learn-more-button" onclick="window.location.href='dermal-filler.html'">Learn
+                        More</button>
                 </div>
             </div>
 
-            <div class="service-item">
-                <img src="images/service-image2.jpg" class="service-img animate-fade-slide">
-                <div class="service-text animate-fade-slide">
-                    <div class="service-header">
-                        <h3>CHEEK FILLER</h3>
-                        <p> $40 | 35 min</p>
-                    </div>
-                    <p>Paragrah here about what this service is about</p>
-                    <button onclick="window.location.href='dermal-filler.html'">Learn More</button>
-
-                </div>
-            </div>
-
-            <div class="service-item">
-                <img src="images/service-image2.jpg" class="service-img animate-fade-slide">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="images/service-image5.jpg" class="service-img animate-fade-slide">
                 <div class="service-text animate-fade-slide">
                     <div class="service-header">
                         <h3>LASER</h3>
-                        <p> $40 | 35 min</p>
+                        <p> $40 | 60 min</p>
                     </div>
-                    <p>Paragrah here about what this service is about</p>
-                    <button onclick="window.location.href='laser.html'">Learn More</button>
+                    <p>
+                        Achieve smooth, hair-free skin with our advanced laser technology that permanently reduces
+                        unwanted hair.
+                    </p>
+                    <button class="learn-more-button" onclick="window.location.href='laser.html'">Learn More</button>
                 </div>
             </div>
         </section>
@@ -226,6 +247,32 @@
                 const navLinks = document.querySelector('.nav-links');
                 navLinks.classList.toggle('active');
             }
+        </script>
+        <div id="promo-popup">
+            <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <video autoplay muted playsinline>
+                    <source src="images/$10 Tuesdays.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const bookNowBtn = document.getElementById("bookNowBtn");
+                if (bookNowBtn) {
+                    bookNowBtn.addEventListener("click", function () {
+                        fbq('track', 'BookNowClick');
+                    });
+                }
+            });
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
         </script>
 </body>
 
