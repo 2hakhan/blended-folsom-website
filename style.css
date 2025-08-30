@@ -771,6 +771,7 @@ a {
     line-height: 1.5;
 }
 
+
 .faq-answer-container>p,
 .faq-answer-container>div:not(.faq-video) {
     flex: 1 1 auto;
@@ -781,6 +782,11 @@ a {
     aspect-ratio: 9/16;
     border-radius: 20px;
     overflow: hidden;
+}
+
+.vimeo-lite {
+    background: #f3f3f3;
+    position: relative;
 }
 
 .faq-video iframe {
